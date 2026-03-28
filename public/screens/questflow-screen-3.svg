@@ -1,0 +1,15 @@
+<svg width="1179" height="2556" viewBox="0 0 1179 2556" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1179" height="2556" rx="96" fill="#0B1020"/>
+  <rect x="56" y="72" width="1067" height="160" rx="42" fill="#121A34" stroke="rgba(255,255,255,0.12)"/>
+  <text x="112" y="170" fill="#F5F7FF" font-family="Arial, sans-serif" font-size="58" font-weight="700">Publish</text>
+  <rect x="56" y="286" width="1067" height="1240" rx="56" fill="#121A34" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="108" y="372" width="963" height="166" rx="32" fill="#151D3E"/>
+  <rect x="108" y="578" width="466" height="166" rx="32" fill="#151D3E"/>
+  <rect x="605" y="578" width="466" height="166" rx="32" fill="#151D3E"/>
+  <rect x="108" y="784" width="466" height="166" rx="32" fill="#151D3E"/>
+  <rect x="605" y="784" width="466" height="166" rx="32" fill="#151D3E"/>
+  <rect x="108" y="990" width="466" height="166" rx="32" fill="#151D3E"/>
+  <rect x="605" y="990" width="466" height="166" rx="32" fill="#151D3E"/>
+  <rect x="56" y="1612" width="1067" height="360" rx="56" fill="#121A34" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="56" y="2250" width="1067" height="156" rx="78" fill="#F5F7FF"/>
+</svg>

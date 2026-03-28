@@ -1,0 +1,16 @@
+<svg width="1179" height="2556" viewBox="0 0 1179 2556" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1179" height="2556" rx="96" fill="#0B1020"/>
+  <rect x="56" y="72" width="1067" height="120" rx="42" fill="#121A34" stroke="rgba(255,255,255,0.12)"/>
+  <text x="120" y="148" fill="#F5F7FF" font-family="Arial, sans-serif" font-size="48" font-weight="700">Quest Detail</text>
+  <rect x="56" y="238" width="1067" height="540" rx="56" fill="#121A34" stroke="rgba(255,255,255,0.12)"/>
+  <text x="108" y="362" fill="#22E6A8" font-family="Arial, sans-serif" font-size="34">HOT QUEST</text>
+  <text x="108" y="478" fill="#F5F7FF" font-family="Arial, sans-serif" font-size="92" font-weight="700">Neon Walk</text>
+  <rect x="828" y="324" width="210" height="120" rx="36" fill="#151D3E"/>
+  <text x="866" y="376" fill="#F5F7FF" fill-opacity="0.56" font-family="Arial, sans-serif" font-size="22">Reward</text>
+  <text x="860" y="430" fill="#22E6A8" font-family="Arial, sans-serif" font-size="42" font-weight="700">0.08 ETH</text>
+  <rect x="56" y="836" width="1067" height="220" rx="42" fill="#151D3E" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="56" y="1096" width="1067" height="220" rx="42" fill="#151D3E" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="56" y="1356" width="1067" height="220" rx="42" fill="#151D3E" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="56" y="2250" width="512" height="156" rx="78" fill="#F5F7FF"/>
+  <rect x="611" y="2250" width="512" height="156" rx="78" fill="#6C5CE7"/>
+</svg>

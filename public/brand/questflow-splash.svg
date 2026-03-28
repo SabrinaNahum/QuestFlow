@@ -1,0 +1,24 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1200" fill="#0B1020"/>
+  <circle cx="215" cy="220" r="180" fill="#00C2FF" fill-opacity="0.16"/>
+  <circle cx="982" cy="215" r="200" fill="#6C5CE7" fill-opacity="0.18"/>
+  <circle cx="620" cy="890" r="280" fill="#22E6A8" fill-opacity="0.08"/>
+  <rect x="132" y="160" width="936" height="880" rx="72" fill="url(#panel)" stroke="rgba(255,255,255,0.12)"/>
+  <text x="180" y="342" fill="#00C2FF" font-family="Arial, sans-serif" font-size="38" letter-spacing="6">BASE MINI APP</text>
+  <text x="180" y="476" fill="#F5F7FF" font-family="Arial, sans-serif" font-size="132" font-weight="700">QuestFlow</text>
+  <text x="180" y="584" fill="#F5F7FF" fill-opacity="0.72" font-family="Arial, sans-serif" font-size="48">Chain tasks. Instant rewards.</text>
+  <rect x="180" y="678" width="280" height="84" rx="42" fill="#F5F7FF"/>
+  <text x="230" y="732" fill="#0B1020" font-family="Arial, sans-serif" font-size="34" font-weight="700">Open QuestFlow</text>
+  <rect x="180" y="808" width="420" height="164" rx="38" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="220" y="868" fill="#F5F7FF" fill-opacity="0.56" font-family="Arial, sans-serif" font-size="28">Live Quests</text>
+  <text x="220" y="935" fill="#F5F7FF" font-family="Arial, sans-serif" font-size="72" font-weight="700">124</text>
+  <rect x="638" y="808" width="250" height="164" rx="38" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="678" y="868" fill="#F5F7FF" fill-opacity="0.56" font-family="Arial, sans-serif" font-size="28">Rewards</text>
+  <text x="678" y="935" fill="#22E6A8" font-family="Arial, sans-serif" font-size="60" font-weight="700">38.6 ETH</text>
+  <defs>
+    <linearGradient id="panel" x1="180" y1="180" x2="1020" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111833"/>
+      <stop offset="1" stop-color="#0D1427"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -11,7 +11,7 @@ export const DATA_SUFFIX = Attribution.toDataSuffix({
 const configParameters = {
   appName: "QuestFlow",
   appDescription: "链上任务发布与完成，参与即得奖励",
-  appUrl: "https://questflow.vercel.app",
+  appUrl: "https://questflow-dusky.vercel.app",
   chains: [base],
   ssr: true,
   wallets: [

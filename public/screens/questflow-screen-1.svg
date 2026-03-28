@@ -1,0 +1,18 @@
+<svg width="1179" height="2556" viewBox="0 0 1179 2556" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1179" height="2556" rx="96" fill="#0B1020"/>
+  <rect x="56" y="72" width="1067" height="180" rx="42" fill="#121A34" stroke="rgba(255,255,255,0.12)"/>
+  <text x="112" y="162" fill="#F5F7FF" font-family="Arial, sans-serif" font-size="62" font-weight="700">QuestFlow</text>
+  <rect x="815" y="110" width="236" height="92" rx="46" fill="#F5F7FF"/>
+  <text x="860" y="168" fill="#0B1020" font-family="Arial, sans-serif" font-size="34" font-weight="700">Connect</text>
+  <rect x="56" y="290" width="1067" height="420" rx="56" fill="#121A34" stroke="rgba(255,255,255,0.12)"/>
+  <text x="110" y="408" fill="#F5F7FF" font-family="Arial, sans-serif" font-size="96" font-weight="700">Discover</text>
+  <text x="110" y="486" fill="#F5F7FF" fill-opacity="0.7" font-family="Arial, sans-serif" font-size="40">Hunt live quests and claim rewards.</text>
+  <rect x="110" y="554" width="300" height="92" rx="46" fill="#F5F7FF"/>
+  <text x="155" y="612" fill="#0B1020" font-family="Arial, sans-serif" font-size="34" font-weight="700">Publish Quest</text>
+  <rect x="56" y="760" width="512" height="280" rx="46" fill="#151D3E" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="611" y="760" width="512" height="280" rx="46" fill="#151D3E" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="56" y="1082" width="512" height="360" rx="46" fill="#121A34" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="611" y="1082" width="512" height="420" rx="46" fill="#121A34" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="56" y="1484" width="512" height="420" rx="46" fill="#121A34" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="611" y="1544" width="512" height="360" rx="46" fill="#121A34" stroke="rgba(255,255,255,0.1)"/>
+</svg>

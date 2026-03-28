@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "QuestFlow",
+    "homeUrl": "https://questflow-dusky.vercel.app",
+    "iconUrl": "https://questflow-dusky.vercel.app/brand/questflow-icon.svg",
+    "splashImageUrl": "https://questflow-dusky.vercel.app/brand/questflow-splash.svg",
+    "splashBackgroundColor": "#0B1020",
+    "subtitle": "Chain tasks. Instant rewards.",
+    "description": "Discover, publish, and complete incentivized onchain quests on Base.",
+    "screenshotUrls": [
+      "https://questflow-dusky.vercel.app/screens/questflow-screen-1.svg",
+      "https://questflow-dusky.vercel.app/screens/questflow-screen-2.svg",
+      "https://questflow-dusky.vercel.app/screens/questflow-screen-3.svg"
+    ],
+    "primaryCategory": "social",
+    "tags": ["base", "quests", "rewards", "social", "incentives"],
+    "heroImageUrl": "https://questflow-dusky.vercel.app/og/questflow-share.svg",
+    "tagline": "Publish missions. Join fast. Claim rewards.",
+    "ogTitle": "QuestFlow",
+    "ogDescription": "链上任务发布与完成，参与即得奖励",
+    "ogImageUrl": "https://questflow-dusky.vercel.app/og/questflow-share.svg",
+    "noindex": false
+  }
+}

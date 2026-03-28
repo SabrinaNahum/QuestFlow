@@ -1,0 +1,29 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#0B1020"/>
+  <rect x="40" y="40" width="1120" height="720" rx="44" fill="url(#bg)" stroke="rgba(255,255,255,0.12)"/>
+  <circle cx="170" cy="158" r="96" fill="#00C2FF" fill-opacity="0.18"/>
+  <circle cx="1010" cy="152" r="124" fill="#6C5CE7" fill-opacity="0.22"/>
+  <text x="96" y="156" fill="#00C2FF" font-family="Arial, sans-serif" font-size="28" letter-spacing="4">BASE MINI APP</text>
+  <text x="96" y="286" fill="#F5F7FF" font-family="Arial, sans-serif" font-size="110" font-weight="700">QuestFlow</text>
+  <text x="96" y="362" fill="#F5F7FF" fill-opacity="0.74" font-family="Arial, sans-serif" font-size="40">Discover, publish, and complete incentivized quests on Base.</text>
+  <rect x="96" y="442" width="252" height="72" rx="36" fill="#F5F7FF"/>
+  <text x="142" y="488" fill="#0B1020" font-family="Arial, sans-serif" font-size="30" font-weight="700">Open QuestFlow</text>
+  <g opacity="0.95">
+    <rect x="698" y="226" width="364" height="196" rx="30" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+    <text x="734" y="282" fill="#F5F7FF" fill-opacity="0.52" font-family="Arial, sans-serif" font-size="24">Live Quests</text>
+    <text x="734" y="352" fill="#F5F7FF" font-family="Arial, sans-serif" font-size="64" font-weight="700">124</text>
+    <text x="734" y="392" fill="#22E6A8" font-family="Arial, sans-serif" font-size="28">Hunters online: 9.3k</text>
+  </g>
+  <g opacity="0.95">
+    <rect x="636" y="466" width="426" height="180" rx="30" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+    <text x="672" y="522" fill="#F5F7FF" fill-opacity="0.52" font-family="Arial, sans-serif" font-size="24">Total Rewards</text>
+    <text x="672" y="592" fill="#22E6A8" font-family="Arial, sans-serif" font-size="64" font-weight="700">38.6 ETH</text>
+  </g>
+  <defs>
+    <linearGradient id="bg" x1="58" y1="54" x2="1140" y2="738" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111833"/>
+      <stop offset="0.48" stop-color="#151B3C"/>
+      <stop offset="1" stop-color="#0A111E"/>
+    </linearGradient>
+  </defs>
+</svg>
