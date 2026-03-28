@@ -24,7 +24,7 @@ export function WalletButton() {
     [connectors]
   );
 
-  // 追踪钱包连接事件
+  // 自定义业务埋点：钱包连接事件
   useEffect(() => {
     if (isConnected && address) {
       trackEvent(QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME, address, 'wallet_connected', {

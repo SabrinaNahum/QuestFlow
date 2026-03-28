@@ -19,7 +19,7 @@ const statusClasses = {
 export function DiscoverPage() {
   const { address } = useAccount();
 
-  // 追踪页面浏览
+  // 自定义业务埋点：页面浏览
   useEffect(() => {
     trackEvent(QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME, address, 'page_view', {
       page: 'discover'

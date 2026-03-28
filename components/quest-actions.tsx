@@ -23,7 +23,7 @@ export function QuestActions({ questId }: { questId: number }) {
 
   const disabled = isPending || isConfirming;
 
-  // 追踪交易确认
+  // 自定义业务埋点：交易确认
   useEffect(() => {
     if (isSuccess && hash) {
       trackEvent(QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME, address, 'transaction_confirmed', {

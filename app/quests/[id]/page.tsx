@@ -15,7 +15,7 @@ function QuestDetailContent({ id }: { id: string }) {
   const { address } = useAccount();
   const quest = quests.find((item) => item.id === Number(id)) ?? quests[0];
 
-  // 追踪 quest 查看
+  // 自定义业务埋点：quest 查看
   useEffect(() => {
     trackEvent(QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME, address, 'quest_view', {
       quest_id: id,

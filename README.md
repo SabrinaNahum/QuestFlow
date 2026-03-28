@@ -16,7 +16,7 @@ QuestFlow is a Base mini app for publishing, discovering, and completing incenti
 - wagmi + RainbowKit
 - Base mainnet contract integration
 - `ox/erc8021` attribution data suffix placeholder
-- transaction tracking via `utils/track.js`
+- 自定义业务埋点 via `utils/track.ts`
 
 ## Notes
 

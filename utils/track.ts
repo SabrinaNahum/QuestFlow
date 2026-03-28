@@ -1,5 +1,7 @@
+// 自定义业务埋点上报地址（仅用于业务事件统计）
 const DASHBOARD_API = 'https://base-dashboard-zeta.vercel.app/api/track'
 
+// 自定义业务埋点：交易上报
 export async function trackTransaction(appId: string, appName: string, userAddress: string | undefined, txHash: string) {
   try {
     await fetch(DASHBOARD_API, {
@@ -25,6 +27,7 @@ export async function trackEvent(
   eventType: string,
   eventData?: Record<string, any>
 ) {
+  // 自定义业务埋点：通用事件上报
   try {
     await fetch(DASHBOARD_API, {
       method: 'POST',
