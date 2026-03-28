@@ -1,28 +1,25 @@
-import { getDefaultConfig } from "@rainbow-me/rainbowkit";
-import { coinbaseWallet, injectedWallet } from "@rainbow-me/rainbowkit/wallets";
+import { coinbaseWallet, injected } from "@wagmi/connectors";
 import { Attribution } from "ox/erc8021";
+import { createConfig, http } from "wagmi";
 import { base } from "wagmi/chains";
 
 const BUILDER_CODE = "bc_o39kexmy";
+
 export const DATA_SUFFIX = Attribution.toDataSuffix({
   codes: [BUILDER_CODE]
 });
 
-const configParameters = {
-  appName: "QuestFlow",
-  appDescription: "链上任务发布与完成，参与即得奖励",
-  appUrl: "https://questflow-dusky.vercel.app",
+export const config = createConfig({
   chains: [base],
-  ssr: true,
-  wallets: [
-    {
-      groupName: "Recommended",
-      wallets: [coinbaseWallet, injectedWallet]
-    }
+  connectors: [
+    coinbaseWallet({
+      appName: "QuestFlow",
+      preference: "smartWalletOnly"
+    }),
+    injected()
   ],
+  transports: {
+    [base.id]: http()
+  },
   dataSuffix: DATA_SUFFIX
-};
-
-export const config = getDefaultConfig(
-  configParameters as unknown as Parameters<typeof getDefaultConfig>[0]
-);
+});

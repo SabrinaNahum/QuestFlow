@@ -1,5 +1,4 @@
 import "./globals.css";
-import "@rainbow-me/rainbowkit/styles.css";
 import type { ReactNode } from "react";
 
 import { Providers } from "./providers";
