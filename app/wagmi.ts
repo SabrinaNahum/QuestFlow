@@ -3,9 +3,9 @@ import { coinbaseWallet, injectedWallet } from "@rainbow-me/rainbowkit/wallets";
 import { Attribution } from "ox/erc8021";
 import { base } from "wagmi/chains";
 
-const BUILDER_CODE = "BUILDER_CODE_PLACEHOLDER";
+const BUILDER_CODE = "bc_o39kexmy";
 export const DATA_SUFFIX = Attribution.toDataSuffix({
-  appCode: BUILDER_CODE
+  codes: [BUILDER_CODE]
 });
 
 const configParameters = {
