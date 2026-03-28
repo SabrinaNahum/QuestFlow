@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { CheckCheck, Loader2, Rocket } from "lucide-react";
 import { useAccount, useWaitForTransactionReceipt, useWriteContract } from "wagmi";
 
@@ -10,18 +10,29 @@ import {
   QUESTFLOW_APP_NAME,
   baseQuestAbi
 } from "@/lib/quest-contract";
-import { trackTransaction } from "@/utils/track";
+import { trackTransaction, trackEvent } from "@/utils/track";
 
 export function QuestActions({ questId }: { questId: number }) {
   const { address } = useAccount();
   const [pendingAction, setPendingAction] = useState<"complete" | "claim" | null>(null);
   const { writeContractAsync, data: hash, isPending } = useWriteContract();
 
-  const { isLoading: isConfirming } = useWaitForTransactionReceipt({
+  const { isLoading: isConfirming, isSuccess } = useWaitForTransactionReceipt({
     hash
   });
 
   const disabled = isPending || isConfirming;
+
+  // 追踪交易确认
+  useEffect(() => {
+    if (isSuccess && hash) {
+      trackEvent(QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME, address, 'transaction_confirmed', {
+        tx_hash: hash,
+        action: pendingAction,
+        quest_id: questId
+      });
+    }
+  }, [isSuccess, hash, pendingAction, questId, address]);
 
   const buttonText = useMemo(() => {
     if (disabled) return "Confirming...";

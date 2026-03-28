@@ -1,5 +1,12 @@
+"use client";
+
+import { useEffect } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Gem, ShieldCheck, Trophy, Wallet } from "lucide-react";
+import { useAccount } from "wagmi";
+
+import { trackEvent } from "@/utils/track";
+import { QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME } from "@/lib/quest-contract";
 
 const tiles = [
   { label: "Total Rewards", value: "1.92 ETH", icon: Gem },
@@ -14,6 +21,15 @@ const sections = [
 ];
 
 export function ProfilePage() {
+  const { address } = useAccount();
+
+  // 追踪页面浏览
+  useEffect(() => {
+    trackEvent(QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME, address, 'page_view', {
+      page: 'profile'
+    });
+  }, [address]);
+
   return (
     <div className="space-y-4 pb-10 pt-6">
       <section className="glass-panel gradient-stroke rounded-[32px] p-5">

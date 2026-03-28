@@ -1,17 +1,28 @@
+"use client";
+
+import { useEffect } from "react";
 import Link from "next/link";
 import { ArrowLeft, Bookmark, Share2, Signal } from "lucide-react";
+import { useAccount } from "wagmi";
 
 import { AppShell } from "@/components/app-shell";
 import { QuestActions } from "@/components/quest-actions";
 import { quests } from "@/lib/mock-data";
+import { trackEvent } from "@/utils/track";
+import { QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME } from "@/lib/quest-contract";
 
-export default async function QuestDetailPage({
-  params
-}: {
-  params: Promise<{ id: string }>;
-}) {
-  const { id } = await params;
+function QuestDetailContent({ id }: { id: string }) {
+  const { address } = useAccount();
   const quest = quests.find((item) => item.id === Number(id)) ?? quests[0];
+
+  // 追踪 quest 查看
+  useEffect(() => {
+    trackEvent(QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME, address, 'quest_view', {
+      quest_id: id,
+      quest_title: quest.title,
+      quest_category: quest.category
+    });
+  }, [id, quest.title, quest.category, address]);
 
   return (
     <AppShell activePath="/">
@@ -90,4 +101,13 @@ export default async function QuestDetailPage({
       <QuestActions questId={quest.id} />
     </AppShell>
   );
+}
+
+export default async function QuestDetailPage({
+  params
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  return <QuestDetailContent id={id} />;
 }

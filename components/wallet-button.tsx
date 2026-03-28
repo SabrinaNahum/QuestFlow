@@ -1,7 +1,10 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { useAccount, useConnect, useDisconnect } from "wagmi";
+
+import { trackEvent } from "@/utils/track";
+import { QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME } from "@/lib/quest-contract";
 
 function shortAddress(address?: string) {
   if (!address) return "";
@@ -20,6 +23,15 @@ export function WalletButton() {
       ),
     [connectors]
   );
+
+  // 追踪钱包连接事件
+  useEffect(() => {
+    if (isConnected && address) {
+      trackEvent(QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME, address, 'wallet_connected', {
+        connector_type: preferredConnectors.find(c => c.id === 'coinbaseWalletSDK') ? 'coinbase' : 'injected'
+      });
+    }
+  }, [isConnected, address, preferredConnectors]);
 
   if (isConnected) {
     return (

@@ -1,7 +1,13 @@
+"use client";
+
+import { useEffect } from "react";
 import Link from "next/link";
 import { ArrowRight, Flame, MapPin, Sparkles, Users2 } from "lucide-react";
+import { useAccount } from "wagmi";
 
 import { filters, quests, socialFeed, stats } from "@/lib/mock-data";
+import { trackEvent } from "@/utils/track";
+import { QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME } from "@/lib/quest-contract";
 
 const statusClasses = {
   Hot: "bg-[#FF6B6B]/18 text-[#FF8E8E]",
@@ -11,6 +17,15 @@ const statusClasses = {
 };
 
 export function DiscoverPage() {
+  const { address } = useAccount();
+
+  // 追踪页面浏览
+  useEffect(() => {
+    trackEvent(QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME, address, 'page_view', {
+      page: 'discover'
+    });
+  }, [address]);
+
   return (
     <div className="space-y-5 pb-10 pt-6">
       <section className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">

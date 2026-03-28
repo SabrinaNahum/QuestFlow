@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { CalendarClock, Loader2, Radar, Sparkles } from "lucide-react";
 import { keccak256, parseEther, stringToHex } from "viem";
 import { useAccount, useWriteContract } from "wagmi";
@@ -11,7 +11,7 @@ import {
   QUESTFLOW_APP_NAME,
   baseQuestAbi
 } from "@/lib/quest-contract";
-import { trackTransaction } from "@/utils/track";
+import { trackTransaction, trackEvent } from "@/utils/track";
 
 const categories = [
   { label: "Exploration", value: 1 },
@@ -29,6 +29,13 @@ export function PublishForm() {
   const [maxUsers, setMaxUsers] = useState(24);
   const [difficulty, setDifficulty] = useState(3);
   const [verification, setVerification] = useState("Onchain action");
+
+  // 追踪页面浏览
+  useEffect(() => {
+    trackEvent(QUESTFLOW_APP_ID, QUESTFLOW_APP_NAME, address, 'page_view', {
+      page: 'publish'
+    });
+  }, [address]);
 
   const metaHash = useMemo(
     () => keccak256(stringToHex(`${title}|${deadline}|${verification}`)),
