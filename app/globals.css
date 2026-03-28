@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(0, 194, 255, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(108, 92, 231, 0.22), transparent 30%),
+    linear-gradient(180deg, #0b1020 0%, #11162b 55%, #080c17 100%);
+  color: #f5f7ff;
+}
+
+body {
+  background-size:
+    auto,
+    auto,
+    auto,
+    28px 28px;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(34, 230, 168, 0.08), transparent 18%),
+    radial-gradient(circle at 85% 18%, rgba(0, 194, 255, 0.12), transparent 16%),
+    radial-gradient(circle at 50% 60%, rgba(108, 92, 231, 0.1), transparent 28%),
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size:
+    auto,
+    auto,
+    auto,
+    24px 24px,
+    24px 24px;
+  opacity: 0.72;
+}
+
+.glass-panel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(18, 23, 45, 0.82), rgba(10, 14, 28, 0.62));
+  backdrop-filter: blur(18px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.gradient-stroke {
+  position: relative;
+}
+
+.gradient-stroke::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(0, 194, 255, 0.5), rgba(108, 92, 231, 0.5), rgba(34, 230, 168, 0.35));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
