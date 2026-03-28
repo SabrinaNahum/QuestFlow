@@ -1,4 +1,4 @@
-import { injected } from "@wagmi/connectors";
+import { injected } from "@wagmi/core";
 import { Attribution } from "ox/erc8021";
 import { createConfig, http } from "wagmi";
 import { base } from "wagmi/chains";
